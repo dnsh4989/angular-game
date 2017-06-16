@@ -1,0 +1,11 @@
+<div ng-controller="LogoutController" class="logout" >
+	<span>{{user.username}}</span>
+	<br/>
+	<a style="cursor:pointer" class="navbar-brand "
+	   ng-click="logout();">Logout
+	</a>
+</div>
+<div class="canvasContainer">
+	<canvas id="gameBoard" width="400" height="400" tabindex="0" ng-keypress="keyPressed($event)"></canvas>
+	<button id="playAgain" ng-click="startGame();">Play Again</button>
+</div>
